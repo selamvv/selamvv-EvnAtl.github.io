@@ -2,6 +2,7 @@
 @import url("fontawesome-all.min.css");
 
 
+
 html, body, div, h2, h3, p, pre, a,img, strong, ol, ul, li, form, label, th, td, aside,
 embed, footer, header, hgroup, menu, nav,
 section{
@@ -485,8 +486,6 @@ div.slide-down p {
 
 
     #boxes {
-        background-color: aqua;
-        content: "";
         display: table;
         clear: both;
       }
@@ -501,16 +500,17 @@ div.slide-down p {
 */
       #column1 {
         background-color: transparent;
-        width: 10%;float: left;
+        width: 6%;float: left;
         padding: 3px;margin-left: 20px;
       }
       #column2 {
         align-content: center;
         display: inline-block;
         background-color: white;
-        width: 72%; padding: 8px;margin-left: 50px;column-gap: 12%;
+        width: 82%; padding: 8px;;column-gap: 12%;padding-top: 60px;padding-bottom: 40px;
       }
       #column3 {
-        height: 350px; width: 10%;float: right; padding: 6px;margin:1px;column-gap: 5%;
+        align-content: inline-block;
+        height: 350px; width: 6%;float: right; padding: 6px;margin:1px;column-gap: 5%;margin-top: 15px;
       }
    
