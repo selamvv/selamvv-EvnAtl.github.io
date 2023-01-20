@@ -13,12 +13,13 @@ section{
 	font: inherit;
 	vertical-align: baseline;}
 
-article, aside,
+
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
 	line-height: 1;
+    overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -27,6 +28,7 @@ ol, ul {
 body {
 	-webkit-text-size-adjust: none;
 }
+
 
 
 /* Basic */
@@ -39,14 +41,7 @@ body {
 		box-sizing: inherit;
 	}
 
-	body {
-        padding-top: 1em;
-        padding-bottom: 0em;
-        padding-left: 2em;
-        padding-right: 2em;
-        border-left: 30px;
-        border-right: 30px; 
-	}
+
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none;
@@ -162,7 +157,10 @@ body {
 	}
 
 	header {
-		margin: 0 0 3em 0;
+      
+  position: sticky;
+  top: 0;
+  z-index: 899;
 	}
 
 		header > p {
@@ -171,25 +169,33 @@ body {
 		}
 
 	footer {
-		margin: 3em 0 0 0;
+		margin: 30px 0 0 -10px;
 	}
 
 		footer > p {
 			font-size: 1.25em;
 		}
-
+.navbar{
+  height: 4px;
+  background-color: whitesmoke;
+  margin-top: 3px;
+    
+}
 /* Nav */
 .nav{
-    position: relative;
-    background-color:white;width:70px;height: 25px; margin-left: 100px;
+ position: relative; 
+ background-color: transparent;
+ width:50px;height: 40px; margin-left: 50px;margin-top: 5px;padding-top: 5px;
+
 }
-.nav:hover{background-color:#ff0000;}
+.nav:hover{flex-grow: 10px;}
 .nav a {
-    display: none;min-width: 70px;
+    display: none;min-width: 50px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 8px 8px; z-index: 2;
 }
-.nav:hover a {display: block;background-color: grey;}
+.nav:hover a {display: block;background-color: transparent;color: black; }
+
 
 /* Large */
 
@@ -259,7 +265,7 @@ body {
 		/* Basic */
 
 			body {
-				padding-top: 24px;
+				padding-top: px;
 			}
 
 			body, input, textarea, select {
@@ -279,7 +285,7 @@ body {
 			}
 
 			header {
-				margin: 0 0 2em 0;
+				margin: 30px 0 0 -10px;
 			}
 
 				header > p {
@@ -287,7 +293,7 @@ body {
 				}
 
 			footer {
-				margin: 2.5em 0 0 0;
+				margin: 30px 0 0 -10px;
 			}
 
 				footer > p {
@@ -328,21 +334,41 @@ body {
 
 		/* Social */
 
-			ul.social {
-				padding: 1em 0.5em 0 0.5em;
-			}
+        .fa {
+          padding: 5px;
+          font-size: 30px;
+          width: 30px;
+          text-align: center;
+          text-decoration: none;
+          
+          border-radius: 50%;
+        }
 
-				ul.social li {
-					margin: 0.5em 0.5em 0.5em 0.5em;
-				}
+        .fa:hover {
+            opacity: 0.7;
+        }
 
-					ul.social li a {
-						top: 0;
-					}
+        .fa-twitter {
+          background: #55ACEE;
+          color: white;
+        }
+        
+        .fa-youtube {
+          background: #bb0000;
+          color: white;
+        }
 
-						ul.social li a:before {
-							background-color: transparent;
-						}
+        .fa-instagram {
+          background: #125688;
+          color: white;
+        }
+        .fa-reddit {
+         background: #ff5700;
+         color: white;
+        }
+        .fa-envelope{ background: pink;
+         color: white;}
+        
 
 		/* Actions */
 
@@ -428,6 +454,7 @@ body {
 
 			#contact footer {
 				margin: 0;
+                padding: 5px;
 			}
 	}
 
@@ -435,6 +462,7 @@ body {
 div.slide-up {
   height:300px;
   overflow:hidden;
+    
 }
 div.slide-up p {
   animation: 10s slide-up;
@@ -457,13 +485,14 @@ div.slide-down {
   overflow:hidden;
 }
 div.slide-down p {
-  animation: 10s slide-down;
+  animation: 8s slide-down;
   margin-top:0%;
+
 }
 
 @keyframes slide-down {
   from {
-    margin-top: -100%;
+    margin-top: -80%;
     height: 300%; 
   }
 
@@ -471,46 +500,89 @@ div.slide-down p {
     margin-top: 0%;
     height: 100%;
     }}
-.float-container {
-    border: 3px solid #fff;
-    padding: 20px;
-}
-
-.float-right {
-    width: 20%; float: right; padding: 20px; border-right: 10px;
-} 
-            
-.float-left {
-    width: 0%; float: left; padding: 20px; margin-left: 10px;
-}
-
 
     #boxes {
+        display: inline;
         display: table;
-        clear: both;
+        clear: none;
+        font-size: 40px;color: red;font-family: courier;
+        background-color: #DCDCDC;
       }
-/*
-      div {
-        float: left;
-        height: 300px;
-        width: 23%;
-        padding: 10px;
+.JOINMEbutton{
+  border-radius: 4px;
+  background-color:#A4998E;
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  column-fill: balance;
+  width:95%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-bottom: 10px backdrop-filter: blur(10px);
+}
+.JOINMEbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.JOINMEbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 10%;
+  top: 50%;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.JOINMEbutton:hover span {
+  padding-right: 35px;
+}
+
+.JOINMEbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+#123{
+    height: 150px; 
+    width: inherit;
+    box-sizing: border-box;
+    padding-top: 30px;
     
-      }
-*/
+}
       #column1 {
+          
+        width: 6%;
+        height: 100%;
+        float: left;
+        column-gap: 5%;
+        margin-left: 10px;
+        margin-right: 10px;
         background-color: transparent;
-        width: 6%;float: left;
-        padding: 3px;margin-left: 20px;
       }
       #column2 {
-        align-content: center;
         display: inline-block;
-        background-color: white;
-        width: 82%; padding: 8px;;column-gap: 12%;padding-top: 60px;padding-bottom: 40px;
+/*        overflow: hidden;*/
+          background-color:whitesmoke;
+        width: 82%; padding: 8px;
+        column-gap: 6%;padding-top: 60px;box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;padding:10px;
+
       }
       #column3 {
-        align-content: inline-block;
-        height: 350px; width: 6%;float: right; padding: 6px;margin:1px;column-gap: 5%;margin-top: 15px;
+/*        align-content: inline-block;*/
+        
+        width: 6%;
+        float: right;
+        height: 100%;
+        padding: 6px;
+        column-gap: 5%;
+        margin-top: 15px;
       }
    

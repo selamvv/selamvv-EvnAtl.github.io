@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+@import url("fontawesome-all.min.css");
+
+
+
+	.column {
+	  height: 200px;
+	  padding: 10px;
+	  margin: 5px;
+	  background-color: #cccccc;
+	  text-align: center;
+	}
+	.container {
+	   display: flex;float: left;
+	}
+
+   
