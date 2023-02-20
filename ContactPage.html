@@ -1,46 +1,27 @@
 <!DOCTYPE html>
     <html>
+    <head>
     <title>Evan Atlas</title>
         <meta charset="utf-8">
         <meta lang="en-us">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     	<link rel="stylesheet" href="assets/css/main.css">
-        <style>
-            .dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-                /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px)  
-        </style>
-    
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         </head>
+        
         <body style="align-content: center;">
-        <div style="background-color:darkslategrey;">
-            <h1 style = "border: firebrick; text-align: center; background-color:#F2F2F2; padding: 19px;">Contact</h1>
-              <h2 style="color:chocolate; font-size: 20px;text-align: center;">Get In Touch</h2>
+            <header style = "text-align: center; background-color:#F2F2F2; padding: 19px;">
+            <h1 style="font-size: 30px;">Get In Touch</h1>
+             <div style="background-color:darkslategrey;">     
     <!--menu-->
-            <div class="nav" style="margin-top: 10px; line-height:1.5em; text-align:center;">=
-                    <a href="index.html">Home</a>
-                    <a href="BookPage.html">Book</a>
-                    <a href="BlogPost.html">Blog</a>
-                    <a href= "ContactPage.html">Contact</a>
-            </div></div>
+    <!--menu-->
+<div class="nav" id="myTopnav">               
+    <a href="index.html">Home </a>
+    <a href="BookPage.html">Book </a>
+    <a href="BlogPost.html">Blog </a>
+    <a href="ContactPage.html" class="active">Contact</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> 
+        </div></div>  </header>
             <!--form-->
              <div class="container" style="border:#4E5B63;border-style: outset; background-color: #B3C9BB;align-content:center;margin:0 auto; margin-top: 20px;">
                 <form action="" method="POST" >
@@ -58,48 +39,42 @@ and (max-device-width : 480px)
                         <textarea name="message" id="message" placeholder="Message"></textarea>
                     </div>
                     <div class="col-12 ">
-                    <ul class="actions" style="list-style: none; margin: 15px;;">
-                        <li><input type="submit" name="submit" value="Submit"></li><li> 
+                    <ul class="actions" style="list-style: none; margin: 10px;">
+                        <li><input type="submit" name="submit" value="Submit"></li><br><li> 
                         <input type="reset" value="Clear Form" class="alt" /></li>
                     </ul>
                     </div>
                 </div>
                 </form>
             </div>
-        <footer>
-            <div style="background-color: #3D2A26; padding-bottom: 4px; padding-top: 3px;font-size:19px; line-height:1.5em; text-align:center;">
-            <span style="letter-spacing:normal;">
-                <span style="text-shadow:#ffffff 0px 0px 1px;">
+             <footer style="margin-right: 0px; padding-right: 0px;"> 
+          <div style="background-color: #3D2A26; padding-bottom: 5px; padding-top: 3px;font-size:19px; text-align:center;">
+              
                     <span style="font-family:nimbus-sans-tw01con,nimbus-sans-tw05con,sans-serif;">
-                        <span style="font-size:19px;">
-                            <span class="color_11">
-                                <span style="text-decoration:underline;">
-                                    <a href="https://substack.com/evanatlas" target="_blank" rel="noreferrer noopener">Substack</a></span>
-                                        &nbsp;
-                                        | <span style="text-decoration:underline;">
-                                    <a href="https://evanatlas.medium.com/" target="_blank" rel="noreferrer noopener">Medium</a></span> 
-                                        | <span style="text-decoration:underline;">
-                                    <a href="https://www.youtube.com/channel/UCYkXkkLfGVNnO9kxKp-EBtQ" target="_blank" rel="noreferrer noopener">YouTube</a></span> 
-                                        | <span style="text-decoration:underline;"><a href="https://twitter.com/AMetarevolution" target="_blank" rel="noreferrer noopener">Twitter</a></span> 
-                                        | <span style="text-decoration:underline;"><a href="https://www.instagram.com/metarevolution/" target="_blank" rel="noreferrer noopener">Instagram</a></span> 
-                                        | <span style="text-decoration:underline;"><a href="https://www.reddit.com/user/evantabakatlas" target="_blank" rel="noreferrer noopener">Reddit</a></span>
-                                | </span>
-                             <span>           
-                                 <span style="text-decoration:underline;">
-                                    <a href="mailto:metarevolutionary@gmail.com" target="_self">Email</a></span> 
-                                    | <span style="text-decoration:underline;">
-                                    <a href="https://letter.wiki/EvanAtlas/conversations" target="_blank" rel="noreferrer noopener">Letter</a>
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
+                                <a href="https://www.youtube.com/channel/UCYkXkkLfGVNnO9kxKp-EBtQ" target="_blank" rel="noreferrer noopener" class="fa fa-youtube"></a> 
+                        
+                                |<a href="https://twitter.com/AMetarevolution" class="fa fa-twitter"></a>
+                        
+                                |<a href="https://www.instagram.com/metarevolution/" class="fa fa-instagram"></a>
+                        
+                                |<a href="https://www.reddit.com/user/evantabakatlas" class="fa fa-reddit"></a>          
+                                |<a href="mailto:metarevolutionary@gmail.com" class="fa fa-envelope;"></a>
                     </span>
-                </span>
-            </div>
-                    <div style="background-color:darkslategrey;">
-                        <ul style="list-style: none;">
-                            <li><div class="sc-fFeiMQ gGasoB"><a href="/about" class="sc-fotOHu bAMHyL">About</a></div></li><li><div class="sc-fFeiMQ gGasoB"><a href="https://privacy.patreon.com/policies" class="sc-fotOHu bAMHyL">Privacy</a></div></li><li><div class="sc-fFeiMQ gGasoB"><a href="/policy" class="sc-fotOHu bAMHyL">Policy &amp; Terms</a></div></li><li><div class="sc-fFeiMQ gGasoB"><a href="/policy/accessibility" class="sc-fotOHu bAMHyL">Accessibility</a></div></li><li><div class="sc-fFeiMQ gGasoB"><a href="https://support.patreon.com/hc/en-us/" class="sc-fotOHu bAMHyL">Help Center &amp; FAQ</a></div></li></ul>
-                    </div>
-            </footer>
+           </div>
+          <div style="background-color:#333;">
+                        <ul style="list-style: none;padding-left: 1em;">
+                            <li><div class="sc-fFeiMQ gGasoB"><a href="/about" style="color:whitesmoke;">About</a></div></li><li><div class="sc-fFeiMQ gGasoB"><a href="https://privacy.patreon.com/policies" style="color: whitesmoke;">Privacy</a></div></li><li><div ><a href="/policy"style="color: whitesmoke;">Policy &amp; Terms</a></div></li><li><div ><a href="/policy/accessibility" style="color: whitesmoke;">Accessibility</a></div></li><li><div ><a href="https://support.patreon.com/hc/en-us/" style="color: whitesmoke;">Help Center &amp; FAQ</a></div></li></ul>
+                    </div></footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+</script>
         </body>
     </html>
