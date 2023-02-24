@@ -406,7 +406,7 @@ input, select, textarea {
 		  cursor: pointer;
   position: relative;
   padding: 0px 5px;
-  font-size: 20px;
+  font-size: 15px;
   width:170px;
   height: 40px;
   margin: 0 auto;
@@ -686,10 +686,10 @@ input, select, textarea {
   position: relative;
   padding: 5px 10px;
   font-size: 30px;
-  width:200px;
+  width:150px;
   border-radius:4px;
   background: transparent;
-  color: white;
+  color: darkslategrey;
   border: 2px solid;
   margin: 5px;
   transition: width 0.5s;
