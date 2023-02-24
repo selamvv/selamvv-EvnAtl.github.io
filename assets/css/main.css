@@ -125,6 +125,7 @@ input, select, textarea {
 		font-size: 3.25em;
 		letter-spacing: -0.025em;
 		font-weight: 300;
+        font-family: Didot;
 	}
 
 		h1 strong {
@@ -182,9 +183,10 @@ input, select, textarea {
 			font-size: 1.25em;
 		}
 .tabs{
-    width:100%;
+    width:60%;
     height:auto;
     margin:0 auto;
+    float: left;
 }
 
 /* tab list item */
@@ -402,12 +404,13 @@ input, select, textarea {
 	.button {
 		  cursor: pointer;
   position: relative;
-  padding: 10px 20px;
-  font-size: 36px;
+  padding: 5px 10px;
+  font-size: 30px;
   width:250px;
+  margin: 0 auto;
   border-radius:4px;
   background: transparent;
-  color: white;
+  color: darkslategrey;
   border: 2px solid;
   transition: width 0.5s;
 	}
@@ -417,7 +420,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #8d7f72;
+			background-color: #3BA8D3;
 			color: #fff;
 		}
 
@@ -435,7 +438,7 @@ input, select, textarea {
 		input[type="reset"].large,
 		button.large,
 		.button.large {
-			font-size: 1.5em;
+			font-size: 1em;
 			letter-spacing: -0.025em;
 		}
 
@@ -492,13 +495,10 @@ input, select, textarea {
 
 		ul.actions li {
 			display: inline-block;
-			margin: 0 0 0 1em;
+			margin: 1em 0 0 1em;
 			padding-left: 0;
 		}
 
-			ul.actions li:first-child {
-				margin-left: 0;
-			}
 .nav {
   overflow: hidden;
   background-color: #333;

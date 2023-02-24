@@ -97,6 +97,7 @@ body {
 		font-size: 3.25em;
 		letter-spacing: -0.025em;
 		font-weight: 300;
+        font-family: Didot;
 	}
 
 		h1 strong {
@@ -296,7 +297,7 @@ margin-top: 5px;padding-top: 15px;
 			}
 
 			header {
-				margin: 0 0 4em 0;
+				margin: 3px 0 0 -10px;
 			}
 
 	}
